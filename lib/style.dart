@@ -20,7 +20,7 @@ final TitleTextStyle = TextStyle(
   color: Colors.white12,
   shadows: [
     Shadow(
-      color: Colors.white12,
+      color: Colors.transparent,
       blurRadius: 5.0,
     ),
   ],

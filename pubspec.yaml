@@ -60,11 +60,14 @@ flutter:
     - family: KaushanScript
       fonts:
         - asset: assets/fonts/KaushanScript-Regular.ttf
-          weight: 300
+          weight: 100
     - family: DancingScript
       fonts:
-        - asset: assets/fonts/DancingScript-Regular.ttf
-          weight: 300
+        #- asset: assets/fonts/DancingScript-Regular.ttf
+        #- asset: assets/fonts/DancingScript-SemiBold.ttf
+        #- asset: assets/fonts/DancingScript-Medium.ttf
+        - asset: assets/fonts/DancingScript-Bold.ttf
+          weight: 100
     - family: Lobster
       fonts:
         - asset: assets/fonts/Lobster-Regular.ttf
