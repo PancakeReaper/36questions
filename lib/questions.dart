@@ -1,5 +1,10 @@
 class Questions {
   static List<String> questions = [
+    // Instructions
+    'INSTRUCTIONS:\nTake turns reading each question aloud,\nthe other person answers first\n' +
+    'Take time to answer everything carefully!\n' +
+    'Tap the right side of the screen to move to the next question, and left to go back\n' +
+    'Estimated time: 45-60 minutes',
     // Set I
     'Given the choice of anyone in the world, whom would you want as a dinner guest?',
     'What would constitute a "perfect day" for you?',
@@ -39,6 +44,8 @@ class Questions {
     'Your house, containing everything you own, catches fire. After saving your loved ones and pets, you have time to safely make a final dash to save any one item. What would it be? Why?',
     'Tell your partner something that you like about them [already].',
     'Share a personal problem and ask your partner’s advice on how he or she might handle it.\nAsk your partner to reflect back to you on how you seem to be feeling about the problem you have chosen.',
+    // End Screen!
+    'Congrats!\nYou\'ve finished all the questions! As the final step, you must now stare into each other\'s eyes for 4 minutes in complete silence',
   ];
 
   static int size() {

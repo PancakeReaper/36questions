@@ -7,7 +7,7 @@ import 'question_text.dart';
 
 class AppHome extends StatefulWidget {
   @override
-  _AppHomeState createState() => _AppHomeState(1);
+  _AppHomeState createState() => _AppHomeState(0);
 }
 
 class _AppHomeState extends State<AppHome> {
@@ -21,7 +21,7 @@ class _AppHomeState extends State<AppHome> {
       body: Stack(
         children: [
           // Container for the background number
-          Background(_currQuestion.toString()),
+          Background((0 < _currQuestion && _currQuestion < Questions.size() - 1) ? _currQuestion.toString() : ''),
           // Container for the question
           QuestionText(_currQuestion),
           // Invisible gestures to advance the question
@@ -32,7 +32,7 @@ class _AppHomeState extends State<AppHome> {
   }
 
   void _nextQuestion() {
-    if (_currQuestion < Questions.size())
+    if (_currQuestion < Questions.size() - 1)
       setState(() {
         _currQuestion++;
       });
