@@ -4,24 +4,41 @@ import 'background.dart';
 import 'next_buttons.dart';
 import 'question_text.dart';
 
-class AppHome extends StatelessWidget {
+class AppHome extends StatefulWidget {
+  @override
+  _AppHomeState createState() => _AppHomeState(1);
+}
+
+class _AppHomeState extends State<AppHome> {
+  int _currQuestion;
+
+  _AppHomeState(this._currQuestion);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
           // Container for the background number
-          Background('36'),
+          Background(_currQuestion.toString()),
           // Container for the question
-          QuestionText(36),
+          QuestionText(_currQuestion),
           // Invisible gestures to advance the question
-          NextButtons(tempFunc, tempFunc),
+          NextButtons(_prevQuestion, _nextQuestion),
         ],
       ),
     );
   }
 
-  void tempFunc() {
-    print("test");
+  void _nextQuestion() {
+    setState(() {
+      _currQuestion++;
+    });
+  }
+
+  void _prevQuestion() {
+    setState(() {
+      _currQuestion--;
+    });
   }
 }
