@@ -41,7 +41,7 @@ class Questions {
     'Share a personal problem and ask your partner’s advice on how he or she might handle it.\nAsk your partner to reflect back to you on how you seem to be feeling about the problem you have chosen.',
   ];
 
-  static int questionsSize() {
+  static int size() {
     return questions.length;
   }
 
