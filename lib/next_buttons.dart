@@ -14,14 +14,14 @@ class NextButtons extends StatelessWidget {
         GestureDetector(
           child: Container(
             width: MediaQuery.of(context).size.width / 2,
-            color: Colors.greenAccent.withAlpha(50),
+            color: Colors.transparent,
           ),
           onTap: _left,
         ),
         GestureDetector(
           child: Container(
             width: MediaQuery.of(context).size.width / 2,
-            color: Colors.blueAccent.withAlpha(50),
+            color: Colors.transparent,
           ),
           onTap: _right,
         ),
