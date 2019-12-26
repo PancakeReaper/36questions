@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Background extends StatelessWidget {
+  final String _bgText;
+
+  Background(this._bgText);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,7 +13,7 @@ class Background extends StatelessWidget {
       color: Colors.red[800],
       child: Center(
         child: Text(
-          "36",
+          _bgText,
           style: Theme.of(context).textTheme.title,
         ),
       ),

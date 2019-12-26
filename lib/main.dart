@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:questions_36/background.dart';
 import 'package:questions_36/question_text.dart';
+import 'package:questions_36/questions.dart';
 import 'package:questions_36/style.dart';
 
 void main() {
@@ -22,9 +23,9 @@ class MyApp extends StatelessWidget {
         body: Stack(
           children: [
             // Container for the background number
-            Background(),
+            Background('36'),
             // Container for the question
-            QuestionText(),
+            QuestionText(36),
           ],
         ),
       ),
