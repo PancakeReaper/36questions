@@ -63,9 +63,6 @@ flutter:
           weight: 100
     - family: DancingScript
       fonts:
-        #- asset: assets/fonts/DancingScript-Regular.ttf
-        #- asset: assets/fonts/DancingScript-SemiBold.ttf
-        #- asset: assets/fonts/DancingScript-Medium.ttf
         - asset: assets/fonts/DancingScript-Bold.ttf
           weight: 100
     - family: Lobster

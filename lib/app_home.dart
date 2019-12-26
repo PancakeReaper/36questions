@@ -20,7 +20,7 @@ class _AppHomeState extends State<AppHome> {
   _AppHomeState(this._currQuestion) {
     _newQuestion = _currQuestion;
     _textOpacity = 1.0;
-    _numberOpacity = 0.0;
+    _numberOpacity = 1.0;
     _buttonsActive = true;
   }
 
@@ -30,7 +30,9 @@ class _AppHomeState extends State<AppHome> {
       body: Stack(
         children: [
           // Container for the background number
-          Background(_currQuestion.toString(), _numberOpacity),
+          Background((0 < _currQuestion && _currQuestion < Questions.size() - 1)
+            ? _currQuestion.toString()
+            : '', _numberOpacity),
           // Container for the question
           AnimatedOpacity(
             opacity: _textOpacity,
@@ -39,7 +41,7 @@ class _AppHomeState extends State<AppHome> {
             child: QuestionText(_currQuestion),
             onEnd: _onAnimEnd,
           ),
-          // Invisible gestures to advance the question
+          // Invisible buttons to advance the question
           NextButtons(_prevQuestion, _nextQuestion),
         ],
       ),
