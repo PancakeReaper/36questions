@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:questions_36/questions.dart';
 
 import 'background.dart';
 import 'next_buttons.dart';
@@ -31,14 +32,16 @@ class _AppHomeState extends State<AppHome> {
   }
 
   void _nextQuestion() {
-    setState(() {
-      _currQuestion++;
-    });
+    if (_currQuestion < Questions.size())
+      setState(() {
+        _currQuestion++;
+      });
   }
 
   void _prevQuestion() {
-    setState(() {
-      _currQuestion--;
-    });
+    if (_currQuestion > 1)
+      setState(() {
+        _currQuestion--;
+      });
   }
 }
