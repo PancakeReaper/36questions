@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:questions_36/background.dart';
 import 'package:questions_36/question_text.dart';
+import 'package:questions_36/style.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,6 +27,16 @@ class MyApp extends StatelessWidget {
             QuestionText(),
           ],
         ),
+      ),
+      theme: _theme(),
+    );
+  }
+
+  ThemeData _theme() {
+    return ThemeData(
+      textTheme: TextTheme(
+        title: TitleTextStyle,
+        body2: Body2TextStyle,
       ),
     );
   }

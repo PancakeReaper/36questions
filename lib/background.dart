@@ -10,17 +10,7 @@ class Background extends StatelessWidget {
       child: Center(
         child: Text(
           "36",
-          style: TextStyle(
-            fontFamily: 'Lobster',
-            fontSize: 220,
-            color: Colors.white12,
-            shadows: [
-              Shadow(
-                color: Colors.white24,
-                blurRadius: 5.0,
-              ),
-            ],
-          ),
+          style: Theme.of(context).textTheme.title,
         ),
       ),
     );

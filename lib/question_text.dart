@@ -8,17 +8,7 @@ class QuestionText extends StatelessWidget {
       child: Center(
         child: Text(
           "Some long ass question text and more personal attacks?",
-          style: TextStyle(
-            fontFamily: 'DancingScript',
-            fontSize: 56,
-            color: Colors.grey[300],
-            shadows: [
-              Shadow(
-                  color: Colors.grey[800],
-                  offset: Offset(3.5, 3.5),
-                  blurRadius: 10.0),
-            ],
-          ),
+          style: Theme.of(context).textTheme.body2,
           textAlign: TextAlign.center,
         ),
       ),
