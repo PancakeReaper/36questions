@@ -2,7 +2,7 @@
 
 ![App Icon](/assets/icon/icon.png)
 
-A minimalistic app for going through the 36 questions based off the popular research paper by A. Aron et Al.
+A small project to get used to the Flutter framework. Based off the 36 questions from the research paper by A. Aron et Al. (Hit the right side to go to the next question, and the left side to go back)
 
 ## Screenshots
 
